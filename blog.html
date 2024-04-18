@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src=".//img/logo.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../Aurora Univerity/index.html">HOME</a></li>
+                        <li><a href="../Aurora Univerity/about.html">ABOUT</a></li>
+                        <li><a href="../Aurora Univerity/course.html">COURSE</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="../Aurora Univerity/contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our certificate and online programs for 2024</h1>
+    </section>
+
+<!----- Blog page content ------>
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="../Aurora Univerity/img/certificate.jpg" alt="">
+            <h2>Our Certificates</h2>
+            <p>Aurora University offers a wide range of certificate programs designed to provide specialized knowledge and skills in various fields, enhancing career prospects and professional development. Our certificate programs are ideal for individuals looking to expand their expertise, pivot into a new career, or stay current in their field without committing to a full degree program. </p>
+                <br> 
+            <p>Each certificate program at Aurora University is crafted to meet industry demands and emerging trends, ensuring that students gain practical and relevant skills that can be immediately applied in the workplace. Our experienced faculty members bring real-world experience and academic rigor to the classroom, offering valuable insights and mentorship to students throughout their certificate journey. </p> 
+                <br>
+            <p>Whether you are interested in business, healthcare, education, technology, or other areas, Aurora University offers certificate programs that cater to diverse interests and career goals. Our programs are flexible and accessible, with options for online, hybrid, or on-campus learning to accommodate busy schedules and varying learning preferences.</p> 
+                <br>
+            <p>By earning a certificate from Aurora University, you demonstrate a commitment to professional growth and lifelong learning. Our certificates provide a recognized credential that can enhance your resume, open up new career opportunities, and position you for success in today's competitive job market.</p> 
+                <br>
+            <p>To learn more about our certificate programs and how they can benefit your career, explore our website or contact our admissions office for personalized guidance. Take the next step towards advancing your career and achieving your professional aspirations with a certificate from Aurora University.</p>
+
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Bussines analytics</span>
+                <span>21</span>
+            </div>
+
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+
+            <div>
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+
+            <div>
+                <span>Journalism</span>
+                <span>22</span>
+            </div>
+
+            <div>
+                <span>Commerce</span>
+                <span>30</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------ Footer ------>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Aurora University is a dynamic institution dedicated to academic excellence and student success. <br> Located in Aurora, Illinois, our university offers a diverse range of undergraduate, graduate, and professional programs.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Paul Francis</p>
+    </div>
+</section>
+
+<!------ Javascript for Toggle Menu ------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
+
+</body>
+</html>

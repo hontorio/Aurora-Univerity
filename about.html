@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src=".//img/logo.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../Aurora Univerity/index.html">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="../Aurora Univerity/course.html">COURSE</a></li>
+                        <li><a href="../Aurora Univerity/blog.html">BLOG</a></li>
+                        <li><a href="../Aurora Univerity/contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+    </section>
+
+<!------  About us content  --------->
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest university</h1>
+            <p>Aurora University, located in Aurora, Illinois, is a distinguished institution offering a comprehensive range of undergraduate, graduate, and professional programs. With a rich history spanning over a century, we are committed to providing exceptional educational opportunities to students of diverse backgrounds. Our university emphasizes academic excellence, personalized learning, and student-centered approaches to education.
+                At Aurora University, our dedicated faculty members prioritize teaching and mentorship, fostering intellectual curiosity, critical thinking, and creative problem-solving skills. Our campus boasts modern facilities, including state-of-the-art classrooms, laboratories, a well-equipped library, and recreational spaces. We provide a supportive and inclusive community where students can engage in extracurricular activities, athletics, and service-learning opportunities. Whether you're pursuing a degree in business, education, health sciences, arts and sciences, or any other field, Aurora University is committed to preparing you for success in your chosen career path. Join us and discover a transformative educational experience that will empower you to achieve your academic and personal goals.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW </a>
+        </div>
+        <div class="about-col">
+            <img src="../Aurora Univerity/img/about.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<!------ Footer ------>
+<section class="footer">
+    <h4>Our social media handles</h4>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Paul Francis</p>
+    </div>
+</section>
+
+<!------ Javascript for Toggle Menu ------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
+
+</body>
+</html>
